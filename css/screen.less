@@ -1804,11 +1804,26 @@
 				margin-bottom: 20px;
 				border-radius:5px;
 				img{
-					width: 157px;
-					min-width: 157px;
-					height: 173px;
-					object-fit: cover;
 					margin-right: 10px;
+				}
+				.img-wrapper{
+					position: relative;
+					img{
+						width: 157px;
+						min-width: 157px;
+						height: 173px;
+						max-height: 173px;
+						object-fit: cover;
+						&.flag{
+							width: 33px;
+							min-width: 33px;
+							height: 22px;
+							max-height: 22px;
+							position: absolute;
+							right: 10px;
+							top: 0;
+						}	
+					}
 				}
 				.info{
 					display: flex;
@@ -4589,6 +4604,15 @@
 		}
 		.championnats-asiatiques {
 		   padding: 20px 0 40px 0;
+		}
+		.safe-sport .form-tile label.form-group select,
+		.safe-sport .form-tile label.form-group input,
+		.safe-sport .form-tile label.form-group textarea{
+			font-size: 16px;
+		}
+		.safe-sport .next-block button{
+			font-size: 16px;
+			height: 45px;
 		}
 	}
 
